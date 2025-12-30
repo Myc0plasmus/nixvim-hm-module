@@ -1,0 +1,1 @@
+require('shaeinst/roshnivim-cs')
