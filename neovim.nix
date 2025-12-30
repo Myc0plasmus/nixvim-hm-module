@@ -47,9 +47,11 @@ in
   # gnumake
   #  ];
   home.packages = with pkgs; [
-    lazygit
     ripgrep
   ];
+  programs.btop.enable = true;
+  programs.lazygit.enable = true;
+
   programs.nixvim = {
     enable = true;
     enableMan = true;
