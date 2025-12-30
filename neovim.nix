@@ -127,4 +127,8 @@ in
       };
     };
   };
+
+  stylix.targets = {
+    nixvim.enable = true;
+  };
 }
