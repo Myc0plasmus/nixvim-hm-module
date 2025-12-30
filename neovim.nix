@@ -129,6 +129,6 @@ in
   };
 
   stylix.targets = {
-    nixvim.enable = true;
+    nixvim.enable = false;
   };
 }
