@@ -44,6 +44,7 @@ in
   #  ];
   home.packages = with pkgs; [
     lazygit
+    ripgrep
   ];
   programs.nixvim = {
     enable = true;
