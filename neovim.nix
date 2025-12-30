@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }:
 
@@ -9,6 +10,9 @@ let
 in
 {
   imports = [
+    inputs.nixvim.homeModules.nixvim
+
+
     (getConfig "nvim-tree.nix")
     (getConfig "telescope.nix")
     (getConfig "toggleterm.nix")
