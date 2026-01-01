@@ -29,6 +29,7 @@ in
     (getConfig "suda.nix")
     (getConfig "trouble.nix")
     (getConfig "spectre.nix")
+    (getConfig "project-nvim.nix")
     # (getConfig "overseer.nix")
     # (getConfig "noice.nix")
 
