@@ -1,3 +1,3 @@
-require("project.nvim").setup {
+require("project").setup {
   allow_different_owners = true,
 }
