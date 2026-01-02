@@ -50,7 +50,6 @@ in
   home.packages = with pkgs; [
     ripgrep
   ];
-  programs.btop.enable = true;
   programs.lazygit.enable = true;
 
   programs.nixvim = {
