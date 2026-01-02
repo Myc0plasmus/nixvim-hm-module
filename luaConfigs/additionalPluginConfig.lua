@@ -16,7 +16,13 @@ local lazygit = Terminal:new({
 	count = 5
 })
 
+function project_cwd()
+  local root, _ = require("project").get_project_root()
+  return root or vim.loop.cwd()
+end
+
 function _lazygit_toggle()
+  lazygit.dir = project_cwd()
   lazygit:toggle()
 end
 
