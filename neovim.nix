@@ -127,6 +127,8 @@ in
         enable = true;
         luaConfig.post = builtins.readFile ./plugSetup/oil.lua;
       };
+      molten.enable = true;
+      jupytext.enable = true;
     };
   };
 
