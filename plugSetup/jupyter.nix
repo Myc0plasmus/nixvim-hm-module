@@ -7,6 +7,7 @@
     plugins = {
       molten.enable = true;
       jupytext.enable = true;
+      hydra.enable = true;
       notebook-navigator = {
         enable = true;
         settings = {
