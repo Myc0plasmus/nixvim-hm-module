@@ -12,7 +12,6 @@ in
   imports = [
     inputs.nixvim.homeModules.nixvim
 
-
     (getConfig "nvim-tree.nix")
     (getConfig "telescope.nix")
     (getConfig "toggleterm.nix")
@@ -30,6 +29,7 @@ in
     (getConfig "trouble.nix")
     (getConfig "spectre.nix")
     (getConfig "project-nvim.nix")
+    (getConfig "jupyter.nix")
     # (getConfig "overseer.nix")
     # (getConfig "noice.nix")
 
