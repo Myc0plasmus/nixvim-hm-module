@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  internalPkgs,
   inputs,
   ...
 }:
@@ -34,6 +35,7 @@ in
     # (getConfig "noice.nix")
 
   ];
+
   #  home.packages = with pkgs; [
   # zip
   # unzip
@@ -47,8 +49,9 @@ in
   # gcc
   # gnumake
   #  ];
-  home.packages = with pkgs; [
-    ripgrep
+
+  home.packages = [
+    pkgs.ripgrep
   ];
   programs.lazygit.enable = true;
 

@@ -6,7 +6,7 @@
 
 {
   home.packages = with pkgs; [
-    nixfmt-rfc-style
+    nixfmt
     rPackages.languageserver
   ];
   nix.nixPath = [ "nixpkgs=${pkgs.path}" ];

@@ -1,3 +1,5 @@
 require("project").setup {
-  allow_different_owners = true,
+  different_owners = {
+    allow = true,
+  },
 }

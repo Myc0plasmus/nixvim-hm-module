@@ -11,10 +11,21 @@
   };
 
   outputs = inputs:
+    let
+      mkPkgs = system:
+        import inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+    in
     {
       nixvimModule = {config, pkgs, lib, ...}:
+      let
+        pkgs' = mkPkgs pkgs.stdenv.hostPlatform.system;
+      in
       import ./neovim.nix {
         inherit  config pkgs lib inputs;
+        internalPkgs=pkgs';
       };
     };
 }
