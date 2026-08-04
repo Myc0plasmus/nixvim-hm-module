@@ -26,17 +26,17 @@
       {
         mode = [ "n" ];
         key = "<leader>hh";
-        action.__raw = "function() harpoon.ui:toggle_quick_menu(harpoon:list()) end";
+        action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end";
       }
       {
         mode = [ "n" ];
-        key = "<leader>hu";
-        action.__raw = "function() harpoon:list():next() end";
+        key = "<leader>hf";
+        action.__raw = "function() require'harpoon':list():next() end";
       }
       {
         mode = [ "n" ];
         key = "<leader>hb";
-        action.__raw = "function() harpoon:list():prev() end";
+        action.__raw = "function() require'harpoon':list():prev() end";
       }
     ];
   };
