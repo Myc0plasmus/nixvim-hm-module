@@ -30,6 +30,7 @@
             installRustc = true;
           };
           dockerls.enable = true;
+          emmet_language_server.enable = true;
           clangd.enable = true;
           jsonls.enable = true;
           html.enable = true;
