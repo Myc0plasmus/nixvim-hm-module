@@ -9,12 +9,23 @@ let
 in
 {
   programs.nixvim = {
-    extraPlugins = with pkgs.vimPlugins; [
-      {
-        plugin = project-nvim;
-        config = toLuaFile ./project-nvim_config.lua;
-      }
-    ];
+    plugins = {
+      project-nvim = {
+        enable = true;
+        enableTelescope = true;
+        settings = {
+          different_owners = {
+            allow = true; 
+          };
+        };
+      };
+    };
+    # extraPlugins = with pkgs.vimPlugins; [
+    #   {
+    #     plugin = project-nvim;
+    #     config = toLuaFile ./project-nvim_config.lua;
+    #   }
+    # ];
   
     keymaps = [
       {
