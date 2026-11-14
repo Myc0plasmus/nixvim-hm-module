@@ -58,6 +58,11 @@ in
 
   programs.nixvim = {
     enable = true;
+
+    nixpkgs.config = {
+      allowUnfree = true;
+    };
+
     enableMan = true;
     extraConfigLuaPre = builtins.readFile ./luaConfigs/options.lua;
     extraConfigLua = builtins.readFile ./luaConfigs/mappings.lua;
@@ -131,8 +136,6 @@ in
         enable = true;
         luaConfig.post = builtins.readFile ./plugSetup/oil.lua;
       };
-      molten.enable = true;
-      jupytext.enable = true;
     };
   };
 
